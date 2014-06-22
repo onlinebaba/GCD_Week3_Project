@@ -1,19 +1,20 @@
 This code book outlines the data management aspects of this project.
 
-#1. Data Preparation
+#1. Introduction
+This code book corresponds to the resultant tidy data file (Week3_Project_TabDelimited_TidyData.txt) that is obtained by processing the R scripts on the activities data obtained from Week 3 course project of Getting and Cleaning data. 
 
-#2. Variable Names
+This document outlines various fields of the resultant tidy file. Please refer to the README.md file that outlines the processing steps that were required to create the tidy file.
 
-#3. DATA DICTIONARY:
+#2. DATA DICTIONARY:
 
 ##activityId
 *Corresponds to the numeric value that is assigned to 6 activity types*
-1. WALKING
-2. WALKING_UPSTAIRS
-3. WALKING_DOWNSTAIRS
-4. SITTING
-5. STANDING
-6. LAYING
+- 1.WALKING
+- 2.WALKING_UPSTAIRS
+- 3.WALKING_DOWNSTAIRS
+- 4.SITTING
+- 5.STANDING
+- 6.LAYING
 
 ##activityName
 *Descriptive name of the activity Id*
@@ -26,7 +27,6 @@ This code book outlines the data management aspects of this project.
 *The body linear acceleration and angular velocity were derived in time to obtain Jerk signals and the magnitude of these three-dimensional signals were calculated using the Euclidean norm*
 
 *X, Y and Z axis are usedto denote 1-axial signals in the X, Y and Z directions.*
-
 
 ##bodyAcclTimeMeanOnXAxis
 *Mean of body acceleration time on X-axis*
@@ -131,31 +131,54 @@ This code book outlines the data management aspects of this project.
 *Mean of body's acceleration frequency on Z-axis*
 
 ##bodyAcclFrequencyStandardDeviationOnXAxis
-##bodyAcclFrequencyStandardDeviationOnYAxis      
+*Standard deviation of body's acceleration frequency on X-axis*
+##bodyAcclFrequencyStandardDeviationOnYAxis
+*Standard deviation of body's acceleration frequency on X-axis*
 ##bodyAcclFrequencyStandardDeviationOnZAxis
+*Standard deviation of body's acceleration frequency on X-axis*
 
 ##bodyAcclFrequencyJerkMeanOnXAxis
-##bodyAcclFrequencyJerkMeanOnYAxis               
+*Mean of body acceleration frequecy jerk signals on X-axis*
+##bodyAcclFrequencyJerkMeanOnYAxis
+*Mean of body acceleration frequecy jerk signals on Y-axis*
 ##bodyAcclFrequencyJerkMeanOnZAxis
+*Mean of body acceleration frequecy jerk signals on Z-axis*
 
 ##bodyAcclFrequencyJerkStandardDeviationOnXAxis
-##bodyAcclFrequencyJerkStandardDeviationOnYAxis  
+*Standard deviation of body acceleration frequecy jerk signals on X-axis*
+##bodyAcclFrequencyJerkStandardDeviationOnYAxis
+*Standard deviation of body acceleration frequecy jerk signals on Y-axis*
 ##bodyAcclFrequencyJerkStandardDeviationOnZAxis
+*Standard deviation of body acceleration frequecy jerk signals on Y-axis*
 
 ##bodyGyroFrequencyMeanOnXAxis
-##bodyGyroFrequencyMeanOnYAxis                   
+*Mean of frequency of body's gyroscopic signals on X-axis*
+##bodyGyroFrequencyMeanOnYAxis
+*Mean of frequency of body's gyroscopic signals on Y-axis*
 ##bodyGyroFrequencyMeanOnZAxis
+*Mean of frequency of body's gyroscopic signals on Z-axis*
 
 ##bodyGyroFrequencyStandardDeviationOnXAxis
-##bodyGyroFrequencyStandardDeviationOnYAxis      
+*Mean of frequency of body's gyroscopic signals on X-axis*
+##bodyGyroFrequencyStandardDeviationOnYAxis
+*Mean of frequency of body's gyroscopic signals on Y-axis*
 ##bodyGyroFrequencyStandardDeviationOnZAxis
+*Mean of frequency of body's gyroscopic signals on Z-axis*
 
 ##bodyAcclFrequencyMagnitudeMean
-##bodyAcclFrequencyMagnitudeStandardDeviation    
+*Mean of the magnitude of the body's acceleration frequency*
+##bodyAcclFrequencyMagnitudeStandardDeviation
+*Standard deviation of the magnitude of the body's acceleration frequency*
 ##bodyAcclJerkFrequencyMagnitudeMean
+*Mean of the magnitude of the body's acceleration jerk frequency*
 ##bodyAcclJerkFrequencyMagnitudeStandardDeviation
+*Standard deviation of the magnitude of the body's acceleration jerk frequency*
 
-##bodyGyroFrequencyMagnitude                     
+##bodyGyroFrequencyMagnitude
+*Mean of the magnitude of the body's gyroscopic frequency*
 ##bodyGyroMagnitudeStandardDeviation
+*Standard deviation of the magnitude of the body's gyroscopic frequency*
 ##bodyGyroJerkFrequencyMagnitudeMean
+*Mean of the magnitude of the body's acceleration gyroscopic frequency*
 ##bodyGyroJerkFrequencyMagnitudeStandardDeviation
+*Standard deviation of the magnitude of the body's acceleration gyroscopic frequency*
