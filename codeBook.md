@@ -1,113 +1,115 @@
 This code book outlines the data management aspects of this project.
 
-1. Data Preparation
+##1. Data Preparation
 
-2. Variable Names
+##2. Variable Names
 
-3. DATA DICTIONARY:
-  
-activityId
-  Corresponds to the numeric value that is assigned to each activity type
-  1..6
-    1 WALKING
-    2 WALKING_UPSTAIRS
-    3 WALKING_DOWNSTAIRS
-    4 SITTING
-    5 STANDING
-    6 LAYING
+##3. DATA DICTIONARY:
 
-activityName
-  Descriptive name of the activity Id
+####activityId
+Corresponds to the numeric value that is assigned to each activity type
+1..6
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
 
-subject
-  Volunteer Id
-  1..30
+####activityName
+Descriptive name of the activity Id
 
-bodyAcclTimeMeanOnXAxis
-bodyAcclTimeMeanOnYAxis
-bodyAcclTimeMeanOnZAxis
+###subject
+Identifies the volunteer Id
+1..30
 
-bodyAcclTimeStandardDeviationOnXAxis
-bodyAcclTimeStandardDeviationOnYAxis
-bodyAcclTimeStandardDeviationOnZAxis
+###bodyAcclTimeMeanOnXAxis
+###bodyAcclTimeMeanOnYAxis
+###bodyAcclTimeMeanOnZAxis
+xyx
 
-gravityAcclTimeMeanOnXAxis
-gravityAcclTimeMeanOnYAxis
-gravityAcclTimeMeanOnZAxis
 
-gravityAcclTimeStandardDeviationOnXAxis
-gravityAcclTimeStandardDeviationOnYAxis
-gravityAcclTimeStandardDeviationOnZAxis
+###bodyAcclTimeStandardDeviationOnXAxis
+###bodyAcclTimeStandardDeviationOnYAxis
+###bodyAcclTimeStandardDeviationOnZAxis
 
-bodyAcclTimeJerkMeanOnXAxis
-bodyAcclTimeJerkMeanOnYAxis
-bodyAcclTimeJerkMeanOnZAxis
+###gravityAcclTimeMeanOnXAxis
+###gravityAcclTimeMeanOnYAxis
+###gravityAcclTimeMeanOnZAxis
 
-bodyAcclTimeJerkStandardDeviationOnXAxis
-bodyAcclTimeJerkStandardDeviationOnYAxis
-bodyAcclTimeJerkStandardDeviationOnZAxis
+###gravityAcclTimeStandardDeviationOnXAxis
+###gravityAcclTimeStandardDeviationOnYAxis
+###gravityAcclTimeStandardDeviationOnZAxis
 
-bodyGyroTimeMeanOnXAxis
-bodyGyroTimeMeanOnYAxis
-bodyGyroTimeMeanOnZAxis
+###bodyAcclTimeJerkMeanOnXAxis
+###bodyAcclTimeJerkMeanOnYAxis
+###bodyAcclTimeJerkMeanOnZAxis
 
-bodyGyroTimeStandardDeviationOnXAxis
-bodyGyroTimeStandardDeviationOnYAxis
-bodyGyroTimeStandardDeviationOnZAxis
+###bodyAcclTimeJerkStandardDeviationOnXAxis
+###bodyAcclTimeJerkStandardDeviationOnYAxis
+###bodyAcclTimeJerkStandardDeviationOnZAxis
 
-bodyGyroTimeJerkMeanOnXAxis
-bodyGyroTimeJerkMeanOnYAxis
-bodyGyroTimeJerkMeanOnZAxis
+###bodyGyroTimeMeanOnXAxis
+###bodyGyroTimeMeanOnYAxis
+###bodyGyroTimeMeanOnZAxis
 
-bodyGyroTimeJerkStandardDeviationOnXAxis
-bodyGyroTimeJerkStandardDeviationOnYAxis
-bodyGyroTimeJerkStandardDeviationOnZAxis
+###bodyGyroTimeStandardDeviationOnXAxis
+###bodyGyroTimeStandardDeviationOnYAxis
+###bodyGyroTimeStandardDeviationOnZAxis
 
-bodyAcclTimeMagnitudeMean
-bodyAcclTimeMagnitudeStandardDeviation
+###bodyGyroTimeJerkMeanOnXAxis
+###bodyGyroTimeJerkMeanOnYAxis
+###bodyGyroTimeJerkMeanOnZAxis
 
-gravityAcclTimeMagnitudeMean                   
-gravityAcclTimeMagnitudeStandardDeviation
+###bodyGyroTimeJerkStandardDeviationOnXAxis
+###bodyGyroTimeJerkStandardDeviationOnYAxis
+###bodyGyroTimeJerkStandardDeviationOnZAxis
 
-bodyAcclTimeJerkMagnitudeMean
-bodyAcclTimeJerkMagnitudeStandardDeviation
+###bodyAcclTimeMagnitudeMean
+###bodyAcclTimeMagnitudeStandardDeviation
 
-bodyGyroTimeMagnitudeMean
-bodyGyroTimeMagnitudeStandardDeviation
+###gravityAcclTimeMagnitudeMean                   
+###gravityAcclTimeMagnitudeStandardDeviation
 
-bodyGyroTimeJerkMagnitudeMean                  
-bodyGyroTimeJerkMagnitudeStandardDeviation
+###bodyAcclTimeJerkMagnitudeMean
+###bodyAcclTimeJerkMagnitudeStandardDeviation
 
-bodyAcclFrequencyMeanOnXAxis
-bodyAcclFrequencyMeanOnYAxis                   
-bodyAcclFrequencyMeanOnZAxis
+###bodyGyroTimeMagnitudeMean
+###bodyGyroTimeMagnitudeStandardDeviation
 
-bodyAcclFrequencyStandardDeviationOnXAxis
-bodyAcclFrequencyStandardDeviationOnYAxis      
-bodyAcclFrequencyStandardDeviationOnZAxis
+###bodyGyroTimeJerkMagnitudeMean                  
+###bodyGyroTimeJerkMagnitudeStandardDeviation
 
-bodyAcclFrequencyJerkMeanOnXAxis
-bodyAcclFrequencyJerkMeanOnYAxis               
-bodyAcclFrequencyJerkMeanOnZAxis
+###bodyAcclFrequencyMeanOnXAxis
+###bodyAcclFrequencyMeanOnYAxis                   
+###bodyAcclFrequencyMeanOnZAxis
 
-bodyAcclFrequencyJerkStandardDeviationOnXAxis
-bodyAcclFrequencyJerkStandardDeviationOnYAxis  
-bodyAcclFrequencyJerkStandardDeviationOnZAxis
+###bodyAcclFrequencyStandardDeviationOnXAxis
+###bodyAcclFrequencyStandardDeviationOnYAxis      
+###bodyAcclFrequencyStandardDeviationOnZAxis
 
-bodyGyroFrequencyMeanOnXAxis
-bodyGyroFrequencyMeanOnYAxis                   
-bodyGyroFrequencyMeanOnZAxis
+###bodyAcclFrequencyJerkMeanOnXAxis
+###bodyAcclFrequencyJerkMeanOnYAxis               
+###bodyAcclFrequencyJerkMeanOnZAxis
 
-bodyGyroFrequencyStandardDeviationOnXAxis
-bodyGyroFrequencyStandardDeviationOnYAxis      
-bodyGyroFrequencyStandardDeviationOnZAxis
+###bodyAcclFrequencyJerkStandardDeviationOnXAxis
+###bodyAcclFrequencyJerkStandardDeviationOnYAxis  
+###bodyAcclFrequencyJerkStandardDeviationOnZAxis
 
-bodyAcclFrequencyMagnitudeMean
-bodyAcclFrequencyMagnitudeStandardDeviation    
-bodyAcclJerkFrequencyMagnitudeMean
-bodyAcclJerkFrequencyMagnitudeStandardDeviation
+###bodyGyroFrequencyMeanOnXAxis
+###bodyGyroFrequencyMeanOnYAxis                   
+###bodyGyroFrequencyMeanOnZAxis
 
-bodyGyroFrequencyMagnitude                     
-bodyGyroMagnitudeStandardDeviation
-bodyGyroJerkFrequencyMagnitudeMean
-bodyGyroJerkFrequencyMagnitudeStandardDeviation
+###bodyGyroFrequencyStandardDeviationOnXAxis
+###bodyGyroFrequencyStandardDeviationOnYAxis      
+###bodyGyroFrequencyStandardDeviationOnZAxis
+
+###bodyAcclFrequencyMagnitudeMean
+###bodyAcclFrequencyMagnitudeStandardDeviation    
+###bodyAcclJerkFrequencyMagnitudeMean
+###bodyAcclJerkFrequencyMagnitudeStandardDeviation
+
+###bodyGyroFrequencyMagnitude                     
+###bodyGyroMagnitudeStandardDeviation
+###bodyGyroJerkFrequencyMagnitudeMean
+###bodyGyroJerkFrequencyMagnitudeStandardDeviation
