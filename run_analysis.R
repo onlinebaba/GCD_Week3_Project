@@ -1,7 +1,5 @@
 library(data.table)
 
-setwd(".")
-
 # Read all activities
 activitiesDF <- read.table("activity_labels.txt")
 names(activitiesDF) <- c("ActivityId","ActivityName")
