@@ -5,7 +5,7 @@ This repository contains a file run_analysis.R in the main directory. This R scr
 
 Ex: On Mac, my current working directory is ~/Documents/Getting_and_Cleaning_Data/Week3 and I have the Samsung data directory "UCI HAR Dataset" in it. (~/Documents/Getting_and_Cleaning_Data/Week3/UCI HAR Dataset/)
 
-When executed this script will process the data under the Samsung data directory and will output the tidy data to "Week3_Project_TabDelimited_TidyData.txt" file inside your working directory.
+When executed this script will process the data under the Samsung data directory and will output the tidy data to "Week3_Project_TabDelimited_TidyData.txt" file inside the Samsung data directory directory.
 
 The is logically divided into 7 steps
 
@@ -41,7 +41,7 @@ Step 5: Calculate average of each variable for each activity and subject
 Step 6: Clean up the column names
   - Strip off braces, t and f prefixes, expand the names (ex: std to StandardDeviation, mag to Magnitude etc) for X,Y and Z axis data. Name is tidy data frame as myTidyDF
 
-Step 7: Write the tidy data to "Week3_Project_TabDelimited_TidyData.txt" file
+Step 7: Write the tidy data to "Week3_Project_TabDelimited_TidyData.txt" file under Samsung data directory
   - Write the myTidyDF to a text file using write.table command
 
 
