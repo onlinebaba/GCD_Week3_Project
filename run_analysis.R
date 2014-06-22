@@ -1,27 +1,25 @@
 library(data.table)
 
 # Read all activities
-activitiesDF <- read.table("activity_labels.txt")
+activitiesDF <- read.table("UCI HAR Dataset/activity_labels.txt")
 names(activitiesDF) <- c("activityId","activityName")
 
 # Read all feature names
-featuresDF <- read.table("features.txt")
-featuresDF
+featuresDF <- read.table("UCI HAR Dataset/features.txt")
 featuresNames <- as.vector(featuresDF$V2)
 
 ############################## Read Test data ##############################
 
 # Read Test Subjects and add column name header
-subjectTestData <- read.table("subject_test.txt")
+subjectTestData <- read.table("UCI HAR Dataset/test/subject_test.txt")
 names(subjectTestData) <- c("subject")
 
 # Read X Test data and add columm name headers
-xTestData <- read.table("X_test.txt")
-# Normalize column names stripping special chars
+xTestData <- read.table("UCI HAR Dataset/test/X_test.txt")
 names(xTestData) <- featuresNames
 
 # Ready Activity y test data and add column name header
-yTestData <- read.table("y_test.txt")
+yTestData <- read.table("UCI HAR Dataset/test/y_test.txt")
 names(yTestData) <- c("activityId")
 
 # Combine feature, subject and activity data into one test data set
@@ -35,16 +33,16 @@ finalTestDataFrame <- cbind(finalSubActTestDataFrame,finalMeanStdTestDataFrame)
 
 ############################## Read train data ##############################
 # Read Train Subjects and add column name header
-subjectTrainData <- read.table("subject_train.txt")
+subjectTrainData <- read.table("UCI HAR Dataset/train/subject_train.txt")
 names(subjectTrainData) <- c("subject")
 
 # Read X Train data and add columm name headers
-xTrainData <- read.table("X_train.txt")
+xTrainData <- read.table("UCI HAR Dataset/train/X_train.txt")
 # Normalize column names stripping special chars
 names(xTrainData) <- featuresNames
 
 # Ready Activity y Train data and add column name header
-yTrainData <- read.table("y_train.txt")
+yTrainData <- read.table("UCI HAR Dataset/train/y_train.txt")
 names(yTrainData) <- c("activityId")
 
 # Combine feature, subject and activity data into one Train data set
@@ -89,4 +87,4 @@ names(myTidyDF) <- gsub("[-]Y", "OnYAxis", names(myTidyDF))
 names(myTidyDF) <- gsub("[-]Z", "OnZAxis", names(myTidyDF))
 
 ################# Write the tidy data to a file #################
-write.table(x=myTidyDF, file="Week3_Project_TabDelimited_TidyData.txt", sep="\t",row.names = TRUE, col.names = TRUE,)
+write.table(x=myTidyDF, file="UCI HAR Dataset/Week3_Project_TabDelimited_TidyData.txt", sep="\t",row.names = TRUE, col.names = TRUE,)
