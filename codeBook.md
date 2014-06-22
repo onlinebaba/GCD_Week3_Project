@@ -5,24 +5,24 @@ This code book outlines the data management aspects of this project.
 2. Variable Names
 
 3. DATA DICTIONARY:
-
+  
 activityId
   Corresponds to the numeric value that is assigned to each activity type
-    1..6
-      1 WALKING
-      2 WALKING_UPSTAIRS
-      3 WALKING_DOWNSTAIRS
-      4 SITTING
-      5 STANDING
-      6 LAYING
-  
+  1..6
+    1 WALKING
+    2 WALKING_UPSTAIRS
+    3 WALKING_DOWNSTAIRS
+    4 SITTING
+    5 STANDING
+    6 LAYING
+
 activityName
   Descriptive name of the activity Id
-  
+
 subject
   Volunteer Id
-    1..30
-    
+  1..30
+
 bodyAcclTimeMeanOnXAxis
 bodyAcclTimeMeanOnYAxis
 bodyAcclTimeMeanOnZAxis
