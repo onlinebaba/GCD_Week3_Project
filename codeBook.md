@@ -22,11 +22,15 @@ This document outlines various fields of the resultant tidy file. Please refer t
 ##subject
 *An identifier of the subject who carried out the experiment.*
 
-*The next setof entries correspond to the mean and standard deviations of time domain and frequency signals that were captured at a constant rate of 50 Hz. The acceleration signal was then separated into body and gravity acceleration signals.*
 
-*The body linear acceleration and angular velocity were derived in time to obtain Jerk signals and the magnitude of these three-dimensional signals were calculated using the Euclidean norm*
 
-*X, Y and Z axis are usedto denote 1-axial signals in the X, Y and Z directions.*
+The next setof entries correspond to the mean and standard deviations of time domain and frequency signals that were captured at a constant rate of 50 Hz. The acceleration signal was then separated into body and gravity acceleration signals.
+
+The body linear acceleration and angular velocity were derived in time to obtain Jerk signals and the magnitude of these three-dimensional signals were calculated using the Euclidean norm
+
+X, Y and Z axis are usedto denote 1-axial signals in the X, Y and Z directions.
+
+
 
 ##bodyAcclTimeMeanOnXAxis
 *Mean of body acceleration time on X-axis*
