@@ -1,115 +1,161 @@
 This code book outlines the data management aspects of this project.
 
-##1. Data Preparation
+#1. Data Preparation
 
-##2. Variable Names
+#2. Variable Names
 
-##3. DATA DICTIONARY:
+#3. DATA DICTIONARY:
 
-####activityId
-Corresponds to the numeric value that is assigned to each activity type
-1..6
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+##activityId
+*Corresponds to the numeric value that is assigned to 6 activity types*
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
 
-####activityName
-Descriptive name of the activity Id
+##activityName
+*Descriptive name of the activity Id*
 
-###subject
-Identifies the volunteer Id
-1..30
+##subject
+*Identifies all 30 volunteer Ids*
 
-###bodyAcclTimeMeanOnXAxis
-###bodyAcclTimeMeanOnYAxis
-###bodyAcclTimeMeanOnZAxis
-xyx
+*The next setof entries correspond to the mean and standard deviations of time domain and frequency signals that were captured at a constant rate of 50 Hz. The acceleration signal was then separated into body and gravity acceleration signals.*
+
+*The body linear acceleration and angular velocity were derived in time to obtain Jerk signals and the magnitude of these three-dimensional signals were calculated using the Euclidean norm*
+
+*X, Y and Z axis are usedto denote 1-axial signals in the X, Y and Z directions.*
 
 
-###bodyAcclTimeStandardDeviationOnXAxis
-###bodyAcclTimeStandardDeviationOnYAxis
-###bodyAcclTimeStandardDeviationOnZAxis
+##bodyAcclTimeMeanOnXAxis
+*Mean of body acceleration time on X-axis*
+##bodyAcclTimeMeanOnYAxis
+*Mean of body acceleration time on Y-axis*
+##bodyAcclTimeMeanOnZAxis
+*Mean of body acceleration time on Z-axis*
 
-###gravityAcclTimeMeanOnXAxis
-###gravityAcclTimeMeanOnYAxis
-###gravityAcclTimeMeanOnZAxis
+##bodyAcclTimeStandardDeviationOnXAxis
+*Standard deviation of body acceleration time on X-axis*
+##bodyAcclTimeStandardDeviationOnYAxis
+*Standard deviation of body acceleration time on Y-axis*
+##bodyAcclTimeStandardDeviationOnZAxis
+*Standard deviation of body acceleration time on Z-axis*
 
-###gravityAcclTimeStandardDeviationOnXAxis
-###gravityAcclTimeStandardDeviationOnYAxis
-###gravityAcclTimeStandardDeviationOnZAxis
+##gravityAcclTimeMeanOnXAxis
+*Mean of gravitational acceleration time on X-axis*
+##gravityAcclTimeMeanOnYAxis
+*Mean of gravitational acceleration time on Y-axis*
+##gravityAcclTimeMeanOnZAxis
+*Mean of gravitational acceleration time on Z-axis*
 
-###bodyAcclTimeJerkMeanOnXAxis
-###bodyAcclTimeJerkMeanOnYAxis
-###bodyAcclTimeJerkMeanOnZAxis
+##gravityAcclTimeStandardDeviationOnXAxis
+*Standard deviation of gravitational acceleration time on X-axis*
+##gravityAcclTimeStandardDeviationOnYAxis
+*Standard deviation of gravitational acceleration time on Y-axis*
+##gravityAcclTimeStandardDeviationOnZAxis
+*Standard deviation of gravitational acceleration time on Z-axis*
 
-###bodyAcclTimeJerkStandardDeviationOnXAxis
-###bodyAcclTimeJerkStandardDeviationOnYAxis
-###bodyAcclTimeJerkStandardDeviationOnZAxis
+##bodyAcclTimeJerkMeanOnXAxis
+*Mean of jerk signals during body acceleration time on X-axis*
+##bodyAcclTimeJerkMeanOnYAxis
+*Mean of jerk signals during body acceleration time on Y-axis*
+##bodyAcclTimeJerkMeanOnZAxis
+*Mean of jerk signals during body acceleration time on Z-axis*
 
-###bodyGyroTimeMeanOnXAxis
-###bodyGyroTimeMeanOnYAxis
-###bodyGyroTimeMeanOnZAxis
+##bodyAcclTimeJerkStandardDeviationOnXAxis
+*Standard deviation of jerk signals during body acceleration time on X-axis*
+##bodyAcclTimeJerkStandardDeviationOnYAxis
+*Standard deviation of jerk signals during body acceleration time on Y-axis*
+##bodyAcclTimeJerkStandardDeviationOnZAxis
+*Standard deviation of jerk signals during body acceleration time on Z-axis*
 
-###bodyGyroTimeStandardDeviationOnXAxis
-###bodyGyroTimeStandardDeviationOnYAxis
-###bodyGyroTimeStandardDeviationOnZAxis
+##bodyGyroTimeMeanOnXAxis
+*Mean of gyroscopic raw signals during body motion on X-axis*
+##bodyGyroTimeMeanOnYAxis
+*Mean of gyroscopic raw signals during body motion on Y-axis*
+##bodyGyroTimeMeanOnZAxis
+*Mean of gyroscopic raw signals during body motion on Z-axis*
 
-###bodyGyroTimeJerkMeanOnXAxis
-###bodyGyroTimeJerkMeanOnYAxis
-###bodyGyroTimeJerkMeanOnZAxis
+##bodyGyroTimeStandardDeviationOnXAxis
+*Standard deviation of gyroscopic raw signals during body motion on X-axis*
+##bodyGyroTimeStandardDeviationOnYAxis
+*Standard deviation of gyroscopic raw signals during body motion on Y-axis*
+##bodyGyroTimeStandardDeviationOnZAxis
+*Standard deviation of gyroscopic raw signals during body motion on Z-axis*
 
-###bodyGyroTimeJerkStandardDeviationOnXAxis
-###bodyGyroTimeJerkStandardDeviationOnYAxis
-###bodyGyroTimeJerkStandardDeviationOnZAxis
+##bodyGyroTimeJerkMeanOnXAxis
+*Mean of gyroscopic raw jerk signals during body motion on X-axis*
+##bodyGyroTimeJerkMeanOnYAxis
+*Mean of gyroscopic raw jerk signals during body motion on Y-axis*
+##bodyGyroTimeJerkMeanOnZAxis
+*Mean of gyroscopic raw jerk signals during body motion on Z-axis*
 
-###bodyAcclTimeMagnitudeMean
-###bodyAcclTimeMagnitudeStandardDeviation
+##bodyGyroTimeJerkStandardDeviationOnXAxis
+*Standard deviation of gyroscopic raw jerk signals during body motion on X-axis*
+##bodyGyroTimeJerkStandardDeviationOnYAxis
+*Standard deviation of gyroscopic raw jerk signals during body motion on X-axis*
+##bodyGyroTimeJerkStandardDeviationOnZAxis
+*Standard deviation of gyroscopic raw jerk signals during body motion on X-axis*
 
-###gravityAcclTimeMagnitudeMean                   
-###gravityAcclTimeMagnitudeStandardDeviation
+##bodyAcclTimeMagnitudeMean
+*Mean of magnitude of the signals when body is accelearating*
+##bodyAcclTimeMagnitudeStandardDeviation
+*Standard deviation of magnitude of the signals when body is accelearating*
 
-###bodyAcclTimeJerkMagnitudeMean
-###bodyAcclTimeJerkMagnitudeStandardDeviation
+##gravityAcclTimeMagnitudeMean
+*Mean of magnitude of the gravitational accelerations signals*
+##gravityAcclTimeMagnitudeStandardDeviation
+*Standard deviation  of magnitude of the gravitational accelerations signals*
 
-###bodyGyroTimeMagnitudeMean
-###bodyGyroTimeMagnitudeStandardDeviation
+##bodyAcclTimeJerkMagnitudeMean
+*Mean of magnitude of the body jerk accelerations signals*
+##bodyAcclTimeJerkMagnitudeStandardDeviation
+*Standard deviation of magnitude of the body jerk accelerations signals*
 
-###bodyGyroTimeJerkMagnitudeMean                  
-###bodyGyroTimeJerkMagnitudeStandardDeviation
+##bodyGyroTimeMagnitudeMean
+*Mean of magnitude of the gyroscopic signals*
+##bodyGyroTimeMagnitudeStandardDeviation
+*Standard deviation of magnitude of the gyroscopic signals*
 
-###bodyAcclFrequencyMeanOnXAxis
-###bodyAcclFrequencyMeanOnYAxis                   
-###bodyAcclFrequencyMeanOnZAxis
+##bodyGyroTimeJerkMagnitudeMean
+*Mean of magnitude of the body's gyroscopic signals*
+##bodyGyroTimeJerkMagnitudeStandardDeviation
+*Standard deviation of magnitude of the body's gyroscopic signals*
 
-###bodyAcclFrequencyStandardDeviationOnXAxis
-###bodyAcclFrequencyStandardDeviationOnYAxis      
-###bodyAcclFrequencyStandardDeviationOnZAxis
+##bodyAcclFrequencyMeanOnXAxis
+*Mean of body's acceleration frequency on X-axis*
+##bodyAcclFrequencyMeanOnYAxis
+*Mean of body's acceleration frequency on Y-axis*
+##bodyAcclFrequencyMeanOnZAxis
+*Mean of body's acceleration frequency on Z-axis*
 
-###bodyAcclFrequencyJerkMeanOnXAxis
-###bodyAcclFrequencyJerkMeanOnYAxis               
-###bodyAcclFrequencyJerkMeanOnZAxis
+##bodyAcclFrequencyStandardDeviationOnXAxis
+##bodyAcclFrequencyStandardDeviationOnYAxis      
+##bodyAcclFrequencyStandardDeviationOnZAxis
 
-###bodyAcclFrequencyJerkStandardDeviationOnXAxis
-###bodyAcclFrequencyJerkStandardDeviationOnYAxis  
-###bodyAcclFrequencyJerkStandardDeviationOnZAxis
+##bodyAcclFrequencyJerkMeanOnXAxis
+##bodyAcclFrequencyJerkMeanOnYAxis               
+##bodyAcclFrequencyJerkMeanOnZAxis
 
-###bodyGyroFrequencyMeanOnXAxis
-###bodyGyroFrequencyMeanOnYAxis                   
-###bodyGyroFrequencyMeanOnZAxis
+##bodyAcclFrequencyJerkStandardDeviationOnXAxis
+##bodyAcclFrequencyJerkStandardDeviationOnYAxis  
+##bodyAcclFrequencyJerkStandardDeviationOnZAxis
 
-###bodyGyroFrequencyStandardDeviationOnXAxis
-###bodyGyroFrequencyStandardDeviationOnYAxis      
-###bodyGyroFrequencyStandardDeviationOnZAxis
+##bodyGyroFrequencyMeanOnXAxis
+##bodyGyroFrequencyMeanOnYAxis                   
+##bodyGyroFrequencyMeanOnZAxis
 
-###bodyAcclFrequencyMagnitudeMean
-###bodyAcclFrequencyMagnitudeStandardDeviation    
-###bodyAcclJerkFrequencyMagnitudeMean
-###bodyAcclJerkFrequencyMagnitudeStandardDeviation
+##bodyGyroFrequencyStandardDeviationOnXAxis
+##bodyGyroFrequencyStandardDeviationOnYAxis      
+##bodyGyroFrequencyStandardDeviationOnZAxis
 
-###bodyGyroFrequencyMagnitude                     
-###bodyGyroMagnitudeStandardDeviation
-###bodyGyroJerkFrequencyMagnitudeMean
-###bodyGyroJerkFrequencyMagnitudeStandardDeviation
+##bodyAcclFrequencyMagnitudeMean
+##bodyAcclFrequencyMagnitudeStandardDeviation    
+##bodyAcclJerkFrequencyMagnitudeMean
+##bodyAcclJerkFrequencyMagnitudeStandardDeviation
+
+##bodyGyroFrequencyMagnitude                     
+##bodyGyroMagnitudeStandardDeviation
+##bodyGyroJerkFrequencyMagnitudeMean
+##bodyGyroJerkFrequencyMagnitudeStandardDeviation
